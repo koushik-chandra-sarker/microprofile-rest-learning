@@ -2,6 +2,7 @@ package com.example.demoProject.controller;
 
 import com.example.demoProject.pojo.User;
 import com.example.demoProject.service.UserService;
+import com.example.demoProject.service.UserServiceHb;
 import org.eclipse.microprofile.rest.client.inject.RegisterRestClient;
 
 import javax.inject.Inject;
@@ -14,7 +15,7 @@ import javax.ws.rs.core.Response;
 public class UserController {
 
     @Inject
-    private UserService userService;
+    private UserServiceHb userService;
 
     @GET
     @Produces("application/json")

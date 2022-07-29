@@ -7,7 +7,7 @@
     
 
     <httpEndpoint id="defaultHttpEndpoint"
-                  httpPort="9081"
+                  httpPort="9080"
                   httpsPort="9444"/>
 
     <webApplication location="${project.name}.war" contextRoot="${app.context.root}">
