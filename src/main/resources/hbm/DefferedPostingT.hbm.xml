@@ -1,0 +1,44 @@
+<?xml version = "1.0" encoding = "utf-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+        "-//Hibernate/Hibernate Mapping DTD//EN"
+        "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+    <class name="com.example.demoProject.pojo.DefferedPostingT"
+           table="DefferedPostingT">
+        <id name="REQ_ID" column="REQ_ID" type="string">
+            <generator class="assigned"/>
+        </id>
+        <property name="CHANNEL_ID" column="CHANNEL_ID" type="string"/>
+        <property name="SVC_CODE" column="SVC_CODE" type="string"/>
+        <property name="SVC_RQ_ID" column="SVC_RQ_ID" type="string"/>
+        <property name="TIMESTAMP" column="TIMESTAMP" type="timestamp"/>
+        <property name="ACCT_ID_F" column="ACCT_ID_F" type="string"/>
+        <property name="ACCT_TYPE_F" column="ACCT_TYPE_F" type="string"/>
+        <property name="ACCT_CUR_F" column="ACCT_CUR_F" type="string"/>
+        <property name="ACCT_ID_T" column="ACCT_ID_T" type="string"/>
+        <property name="ACCT_TYPE_T" column="ACCT_TYPE_T" type="string"/>
+        <property name="ACCT_CUR_T" column="ACCT_CUR_T" type="string"/>
+        <property name="TRN_AMT_F" column="TRN_AMT_F" type="long"/>
+        <property name="TRN_RATE_F" column="TRN_RATE_F" type="long"/>
+        <property name="TRN_AMT_LCE_F" column="TRN_AMT_LCE_F" type="long"/>
+        <property name="MEMO_1_F" column="MEMO_1_F" type="string"/>
+        <property name="TRN_AMT_T" column="TRN_AMT_T" type="long"/>
+        <property name="TRN_RATE_T" column="TRN_RATE_T" type="string"/>
+        <property name="TRN_AMT_LCE_T" column="TRN_AMT_LCE_T" type="long"/>
+        <property name="MEMO_1_T" column="MEMO_1_T" type="string"/>
+        <property name="BDI_X_FER_REFF_NBR" column="BDI_X_FER_REFF_NBR" type="string"/>
+        <property name="AMT" column="AMT" type="long"/>
+        <property name="RATE" column="RATE" type="string"/>
+        <property name="FLG_API_HANDOFF" column="FLG_API_HANDOFF" type="string"/>
+        <property name="FLG_GEFU_HANDOFF" column="FLG_GEFU_HANDOFF" type="string"/>
+        <property name="DAT_API_PROCESS" column="DAT_API_PROCESS" type="string"/>
+        <property name="DAT_GEFU_PROCESS" column="DAT_GEFU_PROCESS" type="string"/>
+        <property name="RES_CODE" column="RES_CODE" type="string"/>
+        <property name="RES_MSG" column="RES_MSG" type="string"/>
+        <property name="FLG_STATUS" column="FLG_STATUS" type="string"/>
+        <property name="JVM_ID_IL" column="JVM_ID_IL" type="string"/>
+        <property name="JVM_ID_POLLER" column="JVM_ID_POLLER" type="string"/>
+        <property name="ACK_NO" column="ACK_NO" type="string"/>
+        <property name="COMMENTS" column="COMMENTS" type="string"/>
+    </class>
+</hibernate-mapping>

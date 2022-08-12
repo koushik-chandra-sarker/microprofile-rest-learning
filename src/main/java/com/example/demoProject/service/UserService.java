@@ -29,7 +29,7 @@ public class UserService {
         return userRepo.save(user);
     }
     public List<User> getAllUsers() {
-        userRepo.getAll();
+        return userRepo.getAll();
     }
     public Boolean deleteUser(String username) {
         return userRepo.delete(username);
