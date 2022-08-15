@@ -1,11 +1,5 @@
 package com.example.demoProject.pojo;
 
-import lombok.AllArgsConstructor;
-import lombok.Builder;
-import lombok.Data;
-import lombok.NoArgsConstructor;
-import javax.persistence.*;
-
 public class User {
 
     private String username;
@@ -13,6 +7,10 @@ public class User {
     private String email;
 
     public User() {
+    }
+    public User(String s, String s1) {
+        this.username = s;
+        this.email = s1;
     }
 
     public User(String username, String password, String email) {

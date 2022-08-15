@@ -11,4 +11,11 @@
         <property name="password" column="password" type="string"/>
         <property name="email" column="email" type="string"/>
     </class>
+    <sql-query name="insertUserSp">
+<!--        <return alias="user" class="com.example.demoProject.pojo.User" />-->
+        <return-scalar column="username" type="string" />
+        <return-scalar column="email" type="string" />
+
+        <![CDATA[CALL insert_user(:username, :password, :email)]]>
+    </sql-query>
 </hibernate-mapping>

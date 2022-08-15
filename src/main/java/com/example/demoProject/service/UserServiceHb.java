@@ -21,7 +21,7 @@ public class UserServiceHb {
     }
 
     public User addUser(User user) {
-        return userRepo.save(user);
+        return userRepo.callInsertSp(user);
     }
     public List<User> getAllUsers() {
         return userRepo.getAll();
