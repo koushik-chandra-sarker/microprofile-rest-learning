@@ -16,6 +16,6 @@
         <return-scalar column="username" type="string" />
         <return-scalar column="email" type="string" />
 
-        <![CDATA[CALL insert_user(:username, :password, :email)]]>
+        <![CDATA[CALL insert_user(:uanme, :password, :email)]]>
     </sql-query>
 </hibernate-mapping>

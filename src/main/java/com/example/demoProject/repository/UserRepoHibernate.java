@@ -37,7 +37,7 @@ public class UserRepoHibernate {
 //            this line for calling stored procedure directly
 //            List list = session.createSQLQuery("call insert_user(:username,:password,:email)")
             Object o = session.createNamedQuery("insertUserSp")
-                    .setParameter("username", user.getUsername())
+                    .setParameter("uname", user.getUsername())
                     .setParameter("password", user.getPassword())
                     .setParameter("email", user.getEmail())
                     .uniqueResult();
